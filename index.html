@@ -2,14 +2,13 @@
 <html>
 <head>
 	<title>Calculadora</title>
-</head>
+	<link rel="stylesheet" type="text/css" href="../calculadora/assets/css/style.css">
+</head >
 <body>
 <h1 align="center">C A L C U L A D O R A </h1>
 <form name="formulario">
 <div type="container" align="center">
-	<input type="text" value="" name="resultado" id="textoPantalla">
-	<br/>
-	<br/>
+	<input type="text" onkeypress="return validarNumero(event)" value="" name="resultado" id="textoPantalla">
 	<table align="center">
 	  <tr>
 	    <td><input type="button" value="1" onclick="mostrarNumero(value);"></td>
@@ -22,18 +21,21 @@
 	    <td><input type="button" value="5" onclick="mostrarNumero(value);"></td> 
 	    <td><input type="button" value="6" onclick="mostrarNumero(value);"></td>
 	    <td><input type="button" value="-" onclick="mostrarNumero(value);"></td>
+
 	  </tr>
 	  <tr>
 	    <td><input type="button" value="7" onclick="mostrarNumero(value);"></td>
 	    <td><input type="button" value="8" onclick="mostrarNumero(value);"></td> 
 	    <td><input type="button" value="9" onclick="mostrarNumero(value);"></td>
 	    <td><input type="button" value="*" onclick="mostrarNumero(value);"></td>
+	    <td><button onclick="eliminar" id="botonCa"> CA </button></td>
 	  </tr>
 	   <tr>
 	    <td><input type="button" value="." onclick="mostrarNumero(value);"></td>
-	    <td><input type="button" value="0" onclick="mostrarNumero(value);"></td> 
-	    <td><input type="button" value="=" onclick="signoIgual(value);"></td>
+	    <td><input type="button" value="0" onclick="mostrarNumero(value);"></td>
+	    <td><button value="**" onclick="mostrarNumero(value);" id="potencia"> ^ </button></td> 
 	    <td><input type="button" value="/" onclick="mostrarNumero(value);"></td>
+	    <td><input type="button" value="=" onclick="signoIgual(value);" id="botonIgual"></td>
 	  </tr>
 	</table>
 </div>

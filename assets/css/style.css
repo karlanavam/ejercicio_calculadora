@@ -1,0 +1,55 @@
+body {
+    background-color: #DAF7A6;
+}
+
+h1 {
+    color: navy;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    font-size: 3em;
+    font-family: Helvetica;
+    color: 	#900C3F; 
+}
+
+#textoPantalla {
+    width: 39%;
+    height: 50px;
+    font-size: 2em;
+    text-align: right;
+    margin-left: 10px;
+
+
+}
+
+input[type=button] {
+	width: 100px;
+	height: 110px;
+	padding:5px; 
+    border:opx solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background: #FFC300;
+
+}
+
+button{
+	width: 100px;
+	height: 110px;
+	padding:5px; 
+    border:opx solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 1.5em;	
+}
+
+#potencia {
+	background: #FFC300;
+}
+#botonCa{
+	background: #FF5733 ;
+}
+
+#botonIgual{
+	background: #C70039 ;
+}
